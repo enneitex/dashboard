@@ -40,6 +40,7 @@ type resourceVerber struct {
 	storageClient       RESTClient
 	rbacClient          RESTClient
 	networkingClient    RESTClient
+	traefikClient       RESTClient
 	apiExtensionsClient RESTClient
 	pluginsClient       RESTClient
 	config              *restclient.Config
@@ -66,6 +67,8 @@ func (verber *resourceVerber) getRESTClientByType(clientType api.ClientType) RES
 		return verber.rbacClient
 	case api.ClientTypeNetworkingClient:
 		return verber.networkingClient
+	case api.ClientTypeTraefikClient:
+		return verber.traefikClient
 	case api.ClientTypeAPIExtensionsClient:
 		return verber.apiExtensionsClient
 	case api.ClientTypePluginsClient:
@@ -144,9 +147,9 @@ type RESTClient interface {
 }
 
 // NewResourceVerber creates a new resource verber that uses the given client for performing operations.
-func NewResourceVerber(client, appsClient, batchClient, autoscalingClient, storageClient, rbacClient, networkingClient, apiExtensionsClient, pluginsClient RESTClient, config *restclient.Config) clientapi.ResourceVerber {
+func NewResourceVerber(client, appsClient, batchClient, autoscalingClient, storageClient, rbacClient, networkingClient, traefikClient, apiExtensionsClient, pluginsClient RESTClient, config *restclient.Config) clientapi.ResourceVerber {
 	return &resourceVerber{client, appsClient,
-		batchClient, autoscalingClient, storageClient, rbacClient, networkingClient, apiExtensionsClient, pluginsClient, config}
+		batchClient, autoscalingClient, storageClient, rbacClient, networkingClient, apiExtensionsClient, traefikClient, pluginsClient, config}
 }
 
 // Delete deletes the resource of the given kind in the given namespace with the given name.

@@ -2452,6 +2452,14 @@
         <source>Provisioner</source>
         <target>제공자</target>
       </trans-unit>
+      <trans-unit id="6060619257650890968" datatype="html">
+        <source>IngressRoutes</source>
+        <target state="new">IngressRoutes</target>
+      </trans-unit>
+      <trans-unit id="5512171841829952928" datatype="html">
+        <source>IngressRoutes </source>
+        <target state="new">IngressRoutes </target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -14,6 +14,7 @@
 
 const baseHref = 'api/v1';
 
+
 export enum Resource {
   job = 'job',
   cronJob = 'cronjob',
@@ -49,6 +50,7 @@ export enum Resource {
   event = 'event',
   container = 'container',
   plugin = 'plugin',
+  ingressRoute = "ingressRoute"
 }
 
 export enum Utility {

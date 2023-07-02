@@ -46,6 +46,7 @@ export const BREADCRUMBS: IBreadcrumbMessage = {
   [IBreadcrumbMessageKey.StatefulSets]: $localize`Stateful Sets`,
   [IBreadcrumbMessageKey.Service]: $localize`Service`,
   [IBreadcrumbMessageKey.Ingresses]: $localize`Ingresses`,
+  [IBreadcrumbMessageKey.IngressRoutes]: $localize`IngressRoutes`,
   [IBreadcrumbMessageKey.IngressClasses]: $localize`Ingress Classes`,
   [IBreadcrumbMessageKey.Services]: $localize`Services`,
   [IBreadcrumbMessageKey.ConfigAndStorage]: $localize`Config And Storage`,

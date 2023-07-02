@@ -136,6 +136,10 @@ export interface IngressList extends ResourceList {
   items: Ingress[];
 }
 
+export interface IngressRouteList extends ResourceList {
+  items: IngressRoute[];
+}
+
 export interface ServiceAccountList extends ResourceList {
   items: ServiceAccount[];
 }
@@ -225,6 +229,8 @@ export type Role = Resource;
 export type RoleBinding = Resource;
 
 export type ConfigMap = Resource;
+
+export type IngressRoute = Resource;
 
 export type ServiceAccount = Resource;
 

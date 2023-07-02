@@ -123,6 +123,7 @@ const (
 	ResourceKindEvent                    = "event"
 	ResourceKindHorizontalPodAutoscaler  = "horizontalpodautoscaler"
 	ResourceKindIngress                  = "ingress"
+	ResourceKindIngressRoute             = "ingressroute"
 	ResourceKindServiceAccount           = "serviceaccount"
 	ResourceKindJob                      = "job"
 	ResourceKindCronJob                  = "cronjob"
@@ -198,6 +199,7 @@ const (
 	ClientTypeRbacClient          = "rbacclient"
 	ClientTypeAPIExtensionsClient = "apiextensionsclient"
 	ClientTypeNetworkingClient    = "networkingclient"
+	ClientTypeTraefikClient    = "traefikclient"
 	ClientTypePluginsClient       = "plugin"
 )
 
