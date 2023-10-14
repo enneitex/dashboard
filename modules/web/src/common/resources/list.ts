@@ -48,6 +48,7 @@ enum SortableColumn {
   Created = 'created',
   Namespace = 'namespace',
   Status = 'status',
+  RestartCount = 'restarts',
   FirstSeen = 'firstSeen',
   LastSeen = 'lastSeen',
 }

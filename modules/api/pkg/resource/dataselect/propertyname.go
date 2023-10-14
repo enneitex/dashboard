@@ -24,6 +24,7 @@ const (
 	CreationTimestampProperty = "creationTimestamp"
 	NamespaceProperty         = "namespace"
 	StatusProperty            = "status"
+	RestartCountProperty      = "restarts"
 	TypeProperty              = "type"
 	FirstSeenProperty         = "firstSeen"
 	LastSeenProperty          = "lastSeen"
