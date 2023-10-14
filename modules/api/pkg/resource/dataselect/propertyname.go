@@ -25,6 +25,7 @@ const (
 	NamespaceProperty         = "namespace"
 	StatusProperty            = "status"
 	RestartCountProperty      = "restarts"
+	NodeProperty              = "node"
 	TypeProperty              = "type"
 	FirstSeenProperty         = "firstSeen"
 	LastSeenProperty          = "lastSeen"
